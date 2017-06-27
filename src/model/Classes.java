@@ -13,6 +13,7 @@ import java.util.Date;
  */
 public class Classes {
     private int id;
+    private String tag;
     private String name;
     private String level;
     private Date beginDate;
@@ -22,8 +23,9 @@ public class Classes {
         
     }
     
-    public Classes(int id, String name, String level, Date beginDate, String period){
+    public Classes(int id, String tag, String name, String level, Date beginDate, String period){
         this.id = id;
+        this.tag = tag;
         this.name = name;
         this.level = level;
         this.beginDate = beginDate;
@@ -38,6 +40,14 @@ public class Classes {
         this.id = id;
     }
 
+    public String getTag(){
+        return tag;
+    }
+    
+    public void setTag(String tag){
+        this.tag = tag;
+    }
+    
     public String getName() {
         return name;
     }
